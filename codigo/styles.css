@@ -1,0 +1,20 @@
+h1{
+    color: gray;
+    position: absolute;
+    left: 40%;
+    right: 75%;
+    
+}
+
+div{
+    background-color: burlywood;
+    /*text-align: center;*/
+    margin: 0 auto;
+    width: 500px;
+    height: 150px;
+
+    position: absolute;
+    left: 40%;
+    right: 75%;
+    top: 40%;
+}

@@ -48,6 +48,15 @@ button{
     align-content: center;
     position: absolute;
     left: 900px;
-    top: 400px;
+    top: 350px;
 
+}
+
+.op{
+    width: 700px;
+    height: 500px;
+    align-content: center;
+    position: absolute;
+    left: 900px;
+    top: 600px; 
 }

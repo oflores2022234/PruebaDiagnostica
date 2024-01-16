@@ -1,20 +1,53 @@
-h1{
-    color: gray;
-    position: absolute;
-    left: 40%;
-    right: 75%;
+.fondo{
+    background-color: #DCFFB7;
+}
+
+.ahorcado-titulo{
+    color: green;
+    text-align: center;
+    
     
 }
 
-div{
-    background-color: burlywood;
-    /*text-align: center;*/
-    margin: 0 auto;
-    width: 500px;
-    height: 150px;
+.letra-titulo{
+    background-color: aqua;
+    text-align: center;
+}
 
+.titulo{
+    background-color: #FFBB64;
+    
+    
+    width: 700px;
+    height: 500px;
+    align-content: center;
     position: absolute;
-    left: 40%;
-    right: 75%;
-    top: 40%;
+    left: 650px;
+    top: 300px;
+}
+
+.teclado{
+    width: 700px;
+    height: 500px;
+    align-content: center;
+    position: absolute;
+    left: 825px;
+    top: 700px;
+
+}
+
+button{
+    border-radius: 25%;
+    background-color: #DCFFB7;
+}
+
+.stickman{
+
+    width: 700px;
+    height: 500px;
+    align-content: center;
+    position: absolute;
+    left: 900px;
+    top: 400px;
+
 }

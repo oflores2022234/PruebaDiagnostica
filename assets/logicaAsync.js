@@ -1,20 +1,21 @@
-function enviarDatos(){
+async function enviarDatos(){
     const nombre = document.getElementById('nombre').value;
 
-    enviarDatosAlServidor(nombre)
-        .then(mostrarMensajeBienvenida)
-        .catch(mostrarMensajeError)
-}
+    try {
+     const resultado = await enviarDatosAlServidor(nombre);
+     mostrarMensajeBienvenida(resultado);   
+    }catch(mensaje){
+        mostrarMensajeError(mensaje);
+    }
+
+}    
 
 function enviarDatosAlServidor(nombre){
     return new Promise((resolve,reject) => {
         setTimeout(() =>{
             const autorizado = (nombre.toLowerCase() == 'papavictor');
-            if(autorizado){
-                resolve('Bienvenido Al Sistema');
-            }else{
-                reject('Usted no está Autorizado');
-            }
+            const resultado = autorizado ? 'Bienvenido al sistema' : 'Acceso Denegado';
+            resultado ? resolve(resultado) : reject(resultado);
         }, 2000);
     });
 }
